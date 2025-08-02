@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>📁 Project Management Tool</h1>
+    <button onclick="showCreateProject()">➕ Create Project</button>
+    <div id="project-board"></div>
+  </div>
+
+  <!-- Modal for creating project -->
+  <div id="projectModal" class="modal">
+    <input type="text" id="projectName" placeholder="Project name">
+    <button onclick="createProject()">Create</button>
+    <button onclick="hideCreateProject()">Cancel</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
